@@ -10,9 +10,9 @@
 
 
 
- - name: play2
-   hosts: dev
-   tasks: 
+- name: play2
+  hosts: dev
+  tasks: 
        - name : Print Hello from dev of play1
          ansible.builtin.debug:
           msg: hai from dev of play1 
