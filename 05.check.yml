@@ -2,11 +2,9 @@
   hosts: all
   tasks: 
     - name: check tomcat is up or not
-      ansible.builtin.shell:
-
-       : ps -ef | grep java | grep -v 
-       register: OUT
-       ignore_errors: yes
+      ansible.builtin.shell:: ps -ef | grep java | grep -v 
+      register: OUT
+      ignore_errors: yes
 
     - name: starting tomcat
       ansible.builtin.debug:
