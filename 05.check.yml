@@ -1,8 +1,8 @@
-- name: checck the tomcat running ore not
+- name: check the tomcat running ore not
   hosts: all
   tasks: 
     - name: check tomcat is up or not
-      ansible.builtin.shell:: ps -ef | grep java | grep -v 
+      ansible.builtin.shell: ps -ef | grep java | grep -v grep
       register: OUT
       ignore_errors: yes
 
