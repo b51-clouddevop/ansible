@@ -11,3 +11,12 @@
       ansible.builtin.debug:
             msg: value of url iS {{ URL }}
 
+    - name: printig the URL quites
+      ansible.builtin.debug:
+            msg: "{{ URL }}"
+
+      vars: 
+        URL: tak.google.com
+    - name: print the cli url 
+      ansible.builtin.debug:  
+            msg: "{{CLI_URL}}"        
