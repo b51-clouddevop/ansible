@@ -1,0 +1,11 @@
+- name: demo on using shell module
+  hosts: all
+  tasks: 
+  - name: runnning a shell command
+    ansible.builtin.shell: uptime
+    register: OUT
+
+
+  - name: printing the out variable   
+    ansible.builtin.shell: 
+     msg: "{{OUT.stdout}}"
