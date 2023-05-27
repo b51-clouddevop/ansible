@@ -1,0 +1,6 @@
+- name: demo on fact
+  hosts: all
+  tasks: 
+   - name: print cs distro
+     debug: 
+       msg: os distro{{ansible_distribution}}
