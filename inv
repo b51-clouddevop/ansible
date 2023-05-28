@@ -1,5 +1,6 @@
-[dev]
-172.31.82.236
-
-[prod]
-172.31.83.29
+[front-end]
+front-end.robot.internal
+[catalogue]
+catalogue.robot.internal
+[mongodb]
+mongodb.robot.internal
