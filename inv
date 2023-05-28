@@ -1,5 +1,5 @@
-[front-end]
-front-end.robot.internal
+[frontend]
+frontend.robot.internal
 [catalogue]
 catalogue.robot.internal
 [mongodb]

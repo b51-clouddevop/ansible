@@ -1,5 +1,5 @@
 - name: configure roboshop project
-  hosts: fron-tend
+  hosts: frontend
   roles: 
-      - fron-tend
+      - frontend
 
