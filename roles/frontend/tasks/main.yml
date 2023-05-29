@@ -20,9 +20,9 @@
     dest: /usr/share/nginx/html
     remote_src: yes
 
-- name: copying roboshpop configaration
+- name: copying roboshop configaration
   ansible.builtin.copy:
-    src: localhost.conf
+    src: roboshop.conf
     dest: /etc/nginx/default.d/roboshop.conf
     
 - name: Restarting ngnix
