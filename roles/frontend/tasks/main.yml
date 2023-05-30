@@ -16,8 +16,8 @@
 
 - name: copy frontend content to ngnix path
   ansible.builtin.copy:
-    src: /tmp/frontend-main/static
-    dest: /usr/share/nginx/html
+    src: /tmp/frontend-main/static/
+    dest: /usr/share/nginx/html/
     remote_src: yes
 
 - name: copying roboshop configaration
