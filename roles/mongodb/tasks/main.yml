@@ -27,12 +27,14 @@
 
 - name: load the  schema
   community.mongodb.mongodb_shell:
-    file: "/tmp/mongodb-main/{{ item }}.js"
+    file: "/tmp/mongodb-main/catalogue.js"
     idempotent: yes
-    loop:
-      - catalogue
-      - users
-
+   
+- name: load the  schema
+  community.mongodb.mongodb_shell:
+    file: "/tmp/mongodb-main/users.js"
+    idempotent: yes
+   
 
 
 
