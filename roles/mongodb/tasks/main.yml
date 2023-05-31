@@ -16,9 +16,10 @@
 
 - name: starting mongodb
   ansible.builtin.service:
-    name: mangod
+    name: mongod
     state: started
     enabled: yes
+
 - name: downloading and extracting mandodb
   ansible.builtin.include_role:
     name: common
